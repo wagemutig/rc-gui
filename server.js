@@ -47,8 +47,3 @@ if (!module.parent) {
     console.log("Server listening on " + port);
   })
 }
-
-<<<<<<< HEAD
-module.exports = server;
-=======
->>>>>>> 346da281a93ac9841f2b93a36f00a8bc100dfcc9
