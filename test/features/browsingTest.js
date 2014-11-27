@@ -57,4 +57,12 @@ describe('Browsing the RCGUI, the user', function() {
     });
   });
 
+  it('should see a button to move backward', function(done) {
+    browser.visit('/', function(error) {
+      assert.ifError(error);
+      browser.assert.element('#move-backward');
+      done();
+    });
+  });
+
 });
