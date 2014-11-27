@@ -65,4 +65,12 @@ describe('Browsing the RCGUI, the user', function() {
     });
   });
 
+  it('should see a button to move right', function(done) {
+    browser.visit('/', function(error) {
+      assert.ifError(error);
+      browser.assert.element('#move-right');
+      done();
+    });
+  });
+
 });
