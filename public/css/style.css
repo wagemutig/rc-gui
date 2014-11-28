@@ -19,9 +19,20 @@ body {
 header {
   width: 100%;
   min-height: 40px;
+  padding: 2% 0 2% 0;
   order: 1;
   background-color: rgb(50,50,50);
   text-align: center;
+}
+
+section#logo {
+  min-height: 40px;
+  width: auto;
+  margin: 0% auto;
+  background-image: url(/svg/logo_bar_noderover.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 /*---------------------------
@@ -41,7 +52,7 @@ main {
 section#movement {
   position: fixed;
   bottom: 0px;
-  margin: 0 0 3rem 3rem;
+  margin: 0 0 3rem 1rem;
   width: 170px;
   height: 170px;
 }
