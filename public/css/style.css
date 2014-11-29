@@ -50,23 +50,12 @@ main {
 ----------------------------*/
 
 section#movement {
+  overflow: visible;
   position: fixed;
   bottom: 0px;
   margin: 0 0 3rem 1rem;
-  width: 170px;
-  height: 170px;
-}
-
-#oval {
-  margin-left:50%;
-  margin-top:50%;
-  position: relative;
-}
-
-#move-forward {
-  stroke: white;
-  stroke-width: 2px;
-  fill: transparent;
+  width: 25vw;
+  height: 25vw;
 }
 
 svg.control-container {
@@ -76,10 +65,12 @@ svg.control-container {
 }
 
 svg {
+  width: 100%;
+  height: 100%;
   stroke: white;
   stroke-width: 2px;
   fill: transparent;
-  padding: 20px;
+  overflow: visible;
 }
 
 g.control:hover {
