@@ -18,10 +18,10 @@ io.on('connection', function(socket){
 
     callback = callback || function() {};
 
-    console.log('on')
-    socket.emit('led-switch', msg);
+    console.log('start')
+    socket.emit('motor-start', msg);
     if (board.isReady) {
-      var led = new five.Led(6);
+      var motor = new five.Motor();
       led.on()
     };
 
